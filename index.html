@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strawberry Vanilla Pancakes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li><a href="index.html">Strawberry Vanilla Pancakes</a></li>
+        <li><a href="About.html">About</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="content"><p><span style='font-family: Lato; font-size: 12.0PT; color: #666666; '>RECIPE</span><span style=''></span><span style=''>Strawberry Vanilla Pancakes</span><span style='font-size: 32.0PT; '>
+</span></p><p style='margin-top: 24.0PT; margin-bottom: 24.0PT; '><img src="img/strawberry-vanilla-pancakes_1.jpg" style="width: 285.26957386363637px; height: 382.404375px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><p><span style=''>Ready in </span><span style='color: #000000; '><strong>20 minutes
+</strong></span></p><p><span style=''>Serves </span><span style='color: #000000; '><strong>8 people
+</strong></span></p><p><span style='color: #000000; '><strong>280 calories</strong></span><span style=''> 
+</span></p><p><span style=''>
+</span></p><h1 style='margin-bottom: 10.0PT; '><span style=''>Ingredients</span><span style=''>
+</span></h1><ul><li><span style=''>Lorem ipsum dolor sit amet
+</span></li><li><span style=''>Consectetuer adipiscing elit
+</span></li><li><span style=''>Suspendisse scelerisque
+</span></li><li><span style=''>Libero interdum auctor
+</span></li></ul><h1 style='margin-bottom: 10.0PT; '><span style=''>Preparation
+</span></h1><ol><li><span style='color: #000000; '><strong>Lorem ipsum dolor sit amet</strong></span><span style=''> consectetuer adipiscing elit sed do tempor incididunt ut labore et dolore magna aliqua. 
+</span></li><li><span style=''>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+</span></li><li><span style='color: #000000; '><strong>Suspendisse scelerisque mi a mi.</strong></span><span style=''> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed dolore eiusmod tempor.
+</span></li><li><span style='color: #000000; '><strong>Vestibulum ante ipsum primis elementum</strong></span><span style=''>, libero interdum auctor cursus, sapien enim dictum quam.
+</span></li><li><span style=''>Phasellus vehicula nonummy nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation.
+</span></li><li><span style=''>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</span></li></ol><h1><span style=''>Tips
+</span></h1><p><span style=''>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed do tempor incididunt ut labore et dolore magna aliqua. 
+</span></p><p><span style=''>
+</span></p><p><span style=''>This page was generated from </span><span style='color: #1155cc; '><u>this document</u></span><span style=''>.
+</span></p>
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
+<script>
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
+
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
+
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
+    }
+}
+</script>
+</body>
+</html>
